@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Женский ретрит</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0b0b0b;
+    --ink:#fff;
+    --accent:#ffd1dc;
+    --footer-h:38vh;
+    --video: #31748a;
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    color:var(--ink);
+    font:16px/1.5 "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+    background:
+      linear-gradient(rgba(11,11,11,.75), rgba(11,11,11,.75)),
+      url("IMG_0886 (2).JPG") center/cover no-repeat fixed;
+    background-color: var(--bg);
+  }
+
+  .wrap{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    padding:clamp(20px,4vw,40px);
+  }
+
+  header{
+    max-width:min(800px,92vw);
+    margin-top:clamp(12px,6vh,80px);
+  }
+  h1{
+    margin:0 0 12px;
+    font-size:clamp(28px,5vw,54px);
+    line-height:1.1;
+  }
+  .lead{margin:0; font-size:clamp(16px,2.2vw,20px); opacity:.95}
+
+  .cta{
+    display:inline-block;
+    margin-top:22px;
+    padding:12px 18px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:999px;
+    text-decoration:none;
+    color:var(--ink);
+    transition:.2s ease;
+  }
+  .cta:hover{transform:translateY(-2px); border-color:var(--ink)}
+  .cta strong{color:var(--accent)}
+
+  /* Новый блок-приглашение */
+  .invite{
+    max-width:min(820px,92vw);
+    margin: clamp(40px,8vh,80px) 0;
+    padding: clamp(20px,5vw,40px);
+    background: rgba(255,255,255,.07);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    font-size:clamp(16px,2vw,20px);
+    line-height:1.6;
+  }
+
+  .invite h1 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  @media (max-width:640px){
+    :root{ --footer-h:42vh; }
+  }
+  .video-title {
+    font-size: 20px;
+  }
+  .invite.video {
+    margin-top: 0 !important;
+    border-left: 3px solid var(--video);
+  }
+</style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Женский ретрит <br> «<span class="uppercase">Любовь</span>, которая не оставляет»</h1>
+      <p class="lead">
+        Остановиться. Вдохнуть. Восстановиться. Пространство любви и принятия.
+      </p>
+      <a class="cta" href="#"><strong>3–5 октября,</strong> Адыгея, п. Хаджох</a>
+    </header>
+
+    <!-- Тот самый текст -->
+    <section class="invite">
+      <h1>Что тебя ждет: </h1>
+      <p>красивое место, уютная и дружная атмосфера, весёлая компания женщин,
+      много творчества, погружение в древнюю историю, музыка, которая лечит душу.</p>
+      <p>Это пространство, где можно быть настоящей, где тебя ждут и принимают.
+      Дай себе эту возможность! Ты заслуживаешь встречу с <span class="uppercase">Любовью!</span><p>
+    </section>
+
+    <h1 class="video-title">Видео с прошлого выезда:</h1>
+    <section class="invite video">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/UmnezwHdvZg?si=E12r2iC7wJd7cdzZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+  </div>
+
+  <div class="footer-photo" aria-hidden="true"></div>
+</body>
+</html>
